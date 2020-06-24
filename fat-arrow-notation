@@ -1,0 +1,28 @@
+“fat arrow” () => notation
+
+const plantNeedsWater = function(day) {
+// przechodzi w:
+const plantNeedsWater = (day) => {
+
+const rectangleArea = (width, height) => {
+  let area = width * height;
+  return area;
+};
+
+REFACTOR - Concise
+const squareNum = (num) => {
+  return num * num;
+};
+
+daje:
+const squareNum = num => num * num;
+
+
+Przektalc 
+const plantNeedsWater = (day) => {
+  return day === 'Wednesday' ? true : false;
+}; 
+
+w to:
+
+const plantNeedsWater = day => day === 'Wednesday' ? true : false; //rozszerzenie ternary operator

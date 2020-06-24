@@ -1,0 +1,30 @@
+my first code with logic
+
+const getRock === 'Rock';
+const getPaper === 'Paper';
+const getScissors === 'Scissors';
+
+getRandom(getRock, getPaper, getScissors);
+let compChoice = getRandom;
+let myChoice = '';
+
+if myChoice === compChoice;
+console.log('It')
+
+if myChoice(rock) && compChoice(scissors) {
+return win;
+} else {
+return defeat;
+}
+// second condition
+
+if myChoice(paper) && compChoice(rock) {
+return win;
+} else {
+return defeat;
+}
+// third condition
+if myChoice(scissors) && compChoice(paper) {
+return win;
+} else {
+return defeat;

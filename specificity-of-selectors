@@ -1,0 +1,9 @@
+Question
+
+Does a “chained” selector have a higher specificity than a class or id selector? For example, which selector would “win”: .special or h1.special or #special?
+Answer
+
+A chained or qualified selector has a higher specificity than a class selector but a lower specificity than the id selector. Hence, assuming these selectors are all targeting the same HTML tag, the specificity from highest to lowest would be:
+1) #special
+2) h1.special
+3) .special

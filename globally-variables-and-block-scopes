@@ -1,0 +1,31 @@
+good practice for globally variables
+
+and how to use block scope
+
+const logSkyColor = () => {
+  const dusk = true;
+  let color = 'blue'; 
+  if (dusk) {
+    let color = 'pink';
+    console.log(color); // pink
+  }
+  console.log(color); // blue 
+};
+
+console.log(color); // ReferenceError
+
+
+i z uzyciem wewnatrz
+
+const logVisibleLightWaves = () => {
+  let lightWaves = 'Moonlight';
+	let region = 'The Arctic';
+  // Add if statement here:
+  if (region === 'The Arctic') {
+    let lightWaves = 'Northern Lights';
+    console.log(lightWaves);
+  }
+  console.log(lightWaves);
+};
+
+logVisibleLightWaves(); 

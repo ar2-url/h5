@@ -1,0 +1,32 @@
+app.js javascript kod do addEventListener
+
+document.addEventListener("DOMContentLoaded", function() {
+	// let data = new FormData();
+	// fetch(`https://jsonplaceholder.typicode.com/posts`, {
+	// 		method: 'POST',
+	// 		mode: 'cors',
+    //         body: JSON.stringify({
+    //             title: 'foo',
+    //             body: 'bar',
+    //             userId: 1
+    //           }),
+	// }).then(response=> response.json().then(result => {
+	// 		console.log(result)
+	// 	})
+    // 	);
+    // fetch('https://jsonplaceholder.typicode.com/posts/1/comments').then(response => {
+    //     response.json().then(result => {
+    //         console.log(result);
+    //         });
+    //     })
+    const mainForm = document.querySelector('#main-form');
+    
+    // class="paragraph" id="main_paragraph"
+    // const form = document.getElementById('main-form');
+    mainForm.addEventListener('submit', ()=> {
+            const inputData = document.getElementById('main-input');
+
+            alert (inputData.value);
+            // console.log(inputData);
+        })
+    });

@@ -1,0 +1,66 @@
+idealSleepHours
+
+const getSleepHours = day => {
+if (day === 'monday') {
+return 8;
+} else if (day === 'tuesday') {
+  return 8;
+} else if (day === 'wednesday') {
+  return 8;
+} else if (day === 'thursday') {
+  return 8;
+} else if (day === 'friday') {
+  return 8;
+} else if (day === 'saturday') {
+  return 8;
+} else if (day === 'sunday') {
+  return 8;
+}
+};
+console.log(getSleepHours('saturday')); 
+
+/* const getActualSleepHours = day => {
+  if (day === 'Monday') {
+return 6;
+} else if (day === 'Tuesday') {
+  return 5;
+} else if (day === 'Wednesday') {
+  return 8;
+} else if (day === 'Thursday') {
+  return 6;
+} else if (day === 'Friday') {
+  return 8;
+} else if (day === 'Saturday') {
+  return 5;
+} else if (day === 'sunday') {
+  return 9;
+}
+}; */
+
+const getActualSleepHours = () => 6 + 7 + 9 + 8 + 5 + 10 + 11; 
+
+/* const getIdealSleepHours = idealHours => idealHours * 7;  to jest skrocona wersja zapisu*/
+const getIdealSleepHours = () => {
+  idealHours = 8;
+  return idealHours * 7;
+}; 
+console.log(getActualSleepHours());
+console.log(getIdealSleepHours());
+
+const calculateSleepDebt = () => {
+  const actualSleepHours = getActualSleepHours();
+  const idealSleepHours = getIdealSleepHours(8); //dizla z cyfra osiem lub bez
+
+  if (actualSleepHours === idealSleepHours) {
+  console.log('OK');
+} else if (actualSleepHours > idealSleepHours) {
+  console.log('Perfect');
+} else {
+  console.log('Sleep more');
+}
+if (actualSleepHours < idealSleepHours) {
+  console.log('You got ' + (idealSleepHours - actualSleepHours) + ' hour(s) less sleep than you needed this week. Get some rest.');
+}
+};
+
+calculateSleepDebt();

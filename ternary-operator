@@ -1,0 +1,10 @@
+the ternary operator
+
+przed :
+if (walkSignal === 'Walk') {
+    console.log('You may walk!'); 
+} else {   
+    console.log('Do not walk!');
+}
+i po zastosowaniu:
+    walkSignal === 'Walk' ? console.log('You may walk!') : console.log('Do not walk!');
